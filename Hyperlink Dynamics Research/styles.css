@@ -1,0 +1,587 @@
+/* Main splash screen styles */
+#splash-screen {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: url('https://www.ionos.com/digitalguide/fileadmin/DigitalGuide/Teaser/hyperlink-t.jpg') no-repeat center center/cover; 
+    color: #ffad42;
+} 
+
+#splash-screen::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(255, 255, 255, 0.1); /* Light white overlay */
+    z-index: 1;
+}
+
+#splash-screen h1{
+    font-size: 3em;
+    position: relative;
+    z-index: 2;
+    text-shadow: 1px 1px 4px rgba(155, 119, 85, 0.6);
+}
+
+#splash-screen p, #splash-screen button {
+    font-size: 1.5em;
+    position: relative;
+    z-index: 2;
+    text-shadow: 1px 1px 4px rgba(155, 119, 85, 0.6);
+}
+
+#main-content {
+    display: none; /* Hidden until triggered */
+}
+
+/* Adjust button style to match the splash screen and be visible over the image */
+button {
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    background-color:  #ffad42;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+button:hover {
+    background-color: #e6953c;
+}
+
+@media (max-width: 768px) {
+    #splash-screen h1 {
+        font-size: 2.5em; 
+    }
+
+    #splash-screen p, #splash-screen button {
+        font-size: 1.2em;
+    }
+}
+
+
+body {
+    background-color: #fff3e0;
+}
+
+.section {
+    background-color: #fffaf5;
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    display: none;
+}
+  
+h2 {
+    color: #cc6e30;
+    text-align: center; 
+}
+
+h3, h4 {
+    color: #cc6e30;
+}
+
+p {
+    text-align: justify;
+}
+
+.navbar .navbar-brand {
+    font-weight: bold;
+    color: #cc6e30;
+}
+
+.btn-primary {
+    background-color: #ffad42; 
+    border-color: #e6953c;
+}
+
+.btn-primary:hover {
+    background-color: #e6953c;
+    border-color: #cc6e30;
+}
+
+.navbar {
+    background-color: #fffaf5;
+    border-bottom: 2px solid #fff3e0;
+}
+
+.navbar .navbar-nav .nav-link {
+    color: #cc6e30;
+}
+
+.navbar .navbar-nav .nav-link:hover {
+    color: #ffad42;
+}
+
+/* definition part */
+.definition-container {
+    display: flex;
+    align-items: flex-start;
+}
+
+.text-content {
+    width: 80%;
+}
+
+.image-content {
+    float: right;
+    margin-left: 20px;
+    margin-top: 60px;
+    margin-bottom: 10px;
+}
+
+.image-content img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    object-fit: cover;
+}
+
+figcaption.image-caption {
+    text-align: center;
+    font-size: 0.9em;
+    color: #666;
+}
+
+@media (max-width: 768px) {
+    .text-content,
+    .image-content {
+        width: 100%;
+        float: none;
+        padding: 0;
+        margin: 10px 0;
+    }
+
+    .image-content img {
+        max-width: 100%;
+    }
+}
+
+/* Part of the Types of Hyperlinks */
+.link-item {
+    background-color: #fffaf5;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+.link-item a {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.link-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Style: AJAX and API Interaction*/
+.interactive-example {
+    background-color: #fffaf5;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.description, .ajax-explanation {
+    color: #cc6e30;
+    margin-bottom: 15px;
+}
+
+.btn-primary {
+    background-color: #ffad42;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #e6953c;
+}
+
+.quote-box {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #fff;
+    border-left: 5px solid #ffad42;
+    color: #333;
+    font-style: italic;
+}
+
+/* Video Part */
+.video-wrapper {
+    margin: 20px 0;
+    padding: 0;
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+    height: 0;
+    overflow: hidden;
+}
+
+.video-wrapper iframe {
+    border: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* The source of images and videos */
+.source {
+    font-size: 0.8em;
+    color: #666;
+    margin-top: 10px;
+    text-align: center;
+}
+
+/* Question Part */
+.quiz-container {
+    background-color: #fffaf5;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    color: #cc6e30;
+}
+
+.quiz-container h3 {
+    margin-bottom: 20px;
+}
+
+.question-container {
+    border: 2px solid #cc6e30;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.quiz-container label {
+    margin-right: 10px;
+}
+
+.quiz-container button {
+    background-color: #ffad42;
+    border: none;
+    color: white;
+    padding: 8px 16px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.quiz-container button:hover {
+    background-color: #e6953c;
+}
+
+
+/* history section */
+/* Style of year timeline */
+.interactive-timeline-container {
+    background-color: #fffaf5;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-navigation {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.year-button {
+    background-color: #ffad42;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.year-button:hover {
+    background-color: #e6953c;
+}
+
+.timeline-content {
+    padding: 20px;
+    background-color: #fffaf5;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+/* Arrow image */
+.next-arrow {
+    cursor: pointer;
+    width: 50px;
+    position: absolute;
+    top: 7px;
+    right: 15px;
+}
+
+.image-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.image-container img {
+    max-width: 70%;
+    height: auto;
+}
+
+/* Style: strong */
+.event-details strong {
+    color: #cc6e30;
+}
+
+
+ /* Section biography */
+#biography {
+    background-color: #fffaf5;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* introduction */
+.bio-introduction p {
+    font-size: 1.1em;
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.bio-introduction a {
+    color: #cc6e30;
+    text-decoration: none; /* No underline */
+}
+
+.bio-introduction a:hover {
+    text-decoration: underline;
+}
+
+/* profile picture */
+.profile-pic {
+    width: 100%;
+    max-width: 200px;
+    display: block;
+    border-radius: 50%; /* Circle shape */
+    border: 4px solid #cc6e30;
+    float: right;
+}
+
+/* education timeline */
+.education-timeline {
+    position: relative;
+    padding-left: 20px;
+    list-style: none;
+}
+
+.education-timeline-item {
+    margin-bottom: 20px;
+}
+
+.education-timeline-marker {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 10px;
+    margin-left: -5px;
+    background-color: #cc6e30;
+    border-radius: 50%;
+    z-index: 5;
+}
+
+.education-timeline-content {
+    margin-left: 20px;
+    padding: 10px;
+    background-color: #fffaf5;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.education-timeline-content h4 {
+    margin-top: 0;
+    color: #cc6e30;
+}
+
+/* skills */
+.skills-container {
+    background-color: #fffaf5;
+    border: 1px solid #cc6e30; 
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.skills-container h3 {
+    color: #cc6e30;
+    margin-bottom: 15px;
+}
+
+.skills-container ul {
+    list-style-type: none; /* No bullet points */
+    padding: 0;
+    margin: 0; 
+}
+
+.skills-container li {
+    font-size: 1.1em; 
+    color: #666;
+    line-height: 1.8; 
+    padding-bottom: 10px; 
+    border-bottom: 1px solid #eee;
+}
+
+.skills-container li:last-child {
+    border-bottom: none; /* Remove border from the last item */
+}
+
+/* experience */
+#experience-section {
+    background-color: #fffaf5;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#experience-section h3 {
+    color: #cc6e30;
+    margin-bottom: 15px;
+}
+
+.experience-item {
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #ffffff;
+    border-left: 5px solid #cc6e30;
+    border-radius: 5px;
+}
+
+.experience-item h4, .experience-item h5 {
+    color: #cc6e30;
+}
+
+.experience-item h5 {
+    margin-top: 5px;
+    font-weight: normal; /* Less emphasis compared to h4 */
+}
+
+.experience-item p {
+    font-size: 0.95em; /* Slightly smaller font size for descriptions */
+    color: #666; 
+    margin-top: 5px;
+    line-height: 1.5; /* Improved readability */
+}
+
+/* Ambassador's image switching */
+.ambassador-image-container {
+    position: relative;
+    text-align: center;
+    margin-top: 1px; 
+}
+
+.main-image, .magnifier {
+    max-width: 100%; 
+    max-width: 450px;
+    height: auto;
+    padding: 5px;
+    border-radius: 5px;
+    transition: transform 0.3s ease; /* Smooth transform effect */
+}
+
+.magnifier {
+    cursor: pointer;
+    width: 230px;
+    position: absolute; 
+    right: 10px; 
+    bottom: 10px;
+}
+
+.ambassador-image-container p {
+    font-size: 0.85em;
+    color: #cc6e30;
+    margin-top: 5px;
+    text-decoration: underline;
+}
+
+/* Drag and drop game */
+.hobbies-container, .descriptions-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 80%; 
+    margin: 20px auto;
+}
+
+.hobby, .description {
+    padding: 15px; 
+    margin: 10px; 
+    border: 2px solid #cc6e30;
+    background-color: #fffaf5; 
+    cursor: pointer;
+    width: 90%;
+    text-align: center;
+    border-radius: 8px;  
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  
+}
+
+.hobby {
+    font-weight: bold;
+    color: #f3ab68;
+}
+
+.description {
+    color: #cc6e30;
+    cursor: grab; 
+}
+
+.description[draggable="true"]:hover {
+    background-color: #e8e8e8;
+    transform: scale(1.03);
+    border-color: #cc6e30;
+}
+
+/* Message for correct or incorrect answers */
+#message{
+    color: #cc6e30;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 25px;
+}
+
+/* Reference to chatGPT */
+.acknowledgment {
+    font-size: 0.6em; 
+    color: #555; 
+    margin-top: 20px; 
+    border-top: 1px solid #ccc; 
+    padding-top: 10px; 
+    text-align: center; 
+}
+
+
+
+
+
+
+
+

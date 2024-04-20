@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hyperlink Dynamics: Unraveling the Web's Navigational Framework</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Splash screen section -->
+    <div id="splash-screen">
+        <h1>Hyperlink Dynamics</h1>
+        <p>Unraveling the Web's Navigational Framework</p>
+        <p>by Shijun Shao 23926903</p>
+        <!-- Button to learn more about the content -->
+        <button id="learn-more-btn">Learn More</button>
+    </div>
+
+    <!-- Main content section -->
+    <div id="main-content" style="display: none;">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Hyperlink Dynamics: Unraveling the Web's Navigational Framework</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#hyperlinks-concept">Concept of Hyperlinks</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#hyperlinks-history">History of Hyperlinks</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#biography">Biography</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <!-- Section for the concept of hyperlinks -->
+        <div id="hyperlinks-concept" class="section">
+            <h2>Concept of Hyperlinks</h2>
+    
+            <div class="definition-container">
+                <div class="text-content">
+                    <h3>Definition and Importance</h3>
+                    <p>Hyperlinks, essential components of the World Wide Web<sup>1</sup>, enable seamless navigation through a myriad of digital content, shaping the very architecture of the internet. These interactive elements go beyond mere connectivity; they embed intricate social and organizational structures within the digital landscape, facilitating complex interactions and information dissemination.</p>
+                    <p>Functioning through the use of HTML anchor tags (&lt;a&gt;) , hyperlinks connect diverse web resources, allowing users to leap from one web page to another or to a specific section within the same page. Each hyperlink contains an 'href' attribute, which specifies the destination URL or an anchor point within a page. This simple yet powerful feature underpins not only web browsing but also the broader user experience, significantly influencing how information is accessed and consumed on the internet.</p>
+                    <p>Beyond their functional role, hyperlinks have transformed access to information, democratizing knowledge and enabling rapid dissemination of ideas across the globe. They are pivotal in web development, affecting everything from site architecture to search engine optimization and digital marketing strategies, making them indispensable in the digital age.</p>
+                </div>
+                <!-- Image content related to hyperlinks -->
+                <figure class="image-content">
+                    <img src="https://media.licdn.com/dms/image/C4E1BAQEKZdQ6veqmbw/company-background_10000/0/1617348428822/hyperlink_brand_solutions_pvt_ltd_cover?e=2147483647&v=beta&t=e1yBvT1IDAVYUCPkTXtPXX0doe9Tm7ET4MAa-nJX8r8" alt="Illustration of a conceptual model for Hyperlink Brand Solutions">
+                    <figcaption class="image-caption">
+                        Fig. 1: Hyperlink navbar-brand<br>
+                        <p class="source">Source: Hyperlink Brand Solutions Pvt Ltd,<br>
+                         “Hyperlink Solutions Cover,” accessed April 09, 2024.</p>
+                    </figcaption>
+                </figure>
+                
+            </div>
+    
+            <h3>HTML Implementation</h3>
+            <p>From a technical perspective, hyperlinks are implemented using the HTML anchor tag, &lt;a&gt;. This tag includes an href attribute which specifies the URL destination of the hyperlink<sup>2</sup>. For example:</p>
+            <code>&lt;a href="https://www.google.com/"&gt;Visit Google&lt;/a&gt;</code>
+            <p>When a user clicks on this link, the browser processes this as an HTTP request to the URL specified in the href attribute, leading to the retrieval and display of the destination webpage.</p>
+            <p>For instance, click <a href="https://www.google.com/" target="_blank">here</a> to open Google.</p>
+            
+    
+            <h3 id="typesOfHyperlinks">Types of Hyperlinks</h3>
+            <ul>
+                <li class="link-item">
+                    <strong>Text Hyperlink:</strong>
+                    <p><em>Definition:</em> A text hyperlink consists of clickable text which leads to another web page, document, or a specific section within a web page. The text is often underlined and styled in a different color (commonly blue) to distinguish it from non-clickable text.</p>
+                    <p><em>Usage:</em> Text hyperlinks are the most common type of hyperlink used on websites. They are typically used to link to other web pages, both within the same website and to external sites. They help in creating a network of pages that enhance user navigation and improve the SEO of websites<sup>3</sup>.</p>
+                    <p><em>Example:</em> Visit my <a href="https://github.com/Halffancyy" target="_blank">GitHub</a></p>
+                </li>
+                <li class="link-item">
+                    <strong>Image Hyperlink:</strong>
+                    <p><em>Definition:</em> An image hyperlink uses an image instead of text to link to another resource. When a user clicks on the image, they are redirected to the linked page or site.</p>
+                    <p><em>Usage:</em> Image hyperlinks are useful for graphical navigation aids, such as buttons or banners. They are often used in advertisements, promotional banners, and navigation menus. They can make a website more visually engaging and intuitive.</p>
+                    <p><em>Example:</em> Click the image to visit my LinkedIn profile:</p>
+                    <figure>
+                        <a href="https://www.linkedin.com/in/shijun-shao-b944b825a/" target="_blank">
+                            <img src="https://blog.academyoflearning.com/wp-content/uploads/2017/09/linkedin-gif.gif" alt="LinkedIn Profile" class="link-image">
+                        </a>
+                        <figcaption class="image-caption">Fig 2: LinkedIn Profile</figcaption>
+                    </figure>
+                    <p class="source">Source: "LinkedIn Logo Animation," Dribble, accessed April 09, 2024, <a href="https://www.pinterest.com.au/pin/508977195364482938/">https://www.pinterest.com.au/pin/508977195364482938/</a></p>
+                </li>
+                <li class="link-item">
+                    <strong>Email Hyperlink:</strong>
+                    <p><em>Definition:</em> An email hyperlink, when clicked, opens the user's default email client with a pre-addressed email to a specified email address. This type of link uses the "mailto:" scheme instead of "http:" or "https:".</p>
+                    <p><em>Usage:</em> Email hyperlinks are used to facilitate quick and direct communication with individuals or organizations. They are commonly found on contact pages, author names, or support sections, allowing users to conveniently start composing an email to the linked address.</p>
+                    <p><em>Example:</em> Email me at <a href="mailto:23926903@student.uwa.edu.au">23926903@student.uwa.edu.au</a></p>
+                </li>
+                <li class="link-item">
+                    <strong>Bookmark Hyperlink:</strong>
+                    <p><em>Definition:</em> A bookmark hyperlink, also known as an anchor link, directs the user to a specific part of a webpage rather than loading a new page entirely. These links point to an anchor—a point or a section within a page that has been marked with an identifier (ID).</p>
+                    <p><em>Usage:</em> Bookmark hyperlinks are useful for navigating long webpages. They help improve user experience by allowing quick jumps to relevant sections within a page, such as jumping to the comments section at the bottom of an article or to specific chapters in an online documentation.</p>
+                    <p><em>Example:</em> Jump to the <a href="#typesOfHyperlinks">Types of Hyperlinks</a></p>
+                </li>
+            </ul>
+    
+            <div class="interactive-example">
+                <h3>Interactive Example: AJAX and API Interaction</h3>
+                <p class="description">
+                    To demonstrate real-time data interaction on the web without a page refresh, we'll use an AJAX call to retrieve data from a public API. This example uses the JSONPlaceholder API<sup>4</sup> for demonstration.
+                </p>            
+                <button id="load-quote" class="btn btn-primary">Load Quote</button>
+                <div id="quote" class="quote-box"></div>
+            
+                <div class="ajax-explanation">
+                    <h4>Step-by-Step Explanation:</h4>
+                    <ol>
+                        <li><strong>What is AJAX?</strong> - AJAX stands for Asynchronous JavaScript and XML. It allows web pages to be updated asynchronously by exchanging small amounts of data with the server behind the scenes. This means that it is possible to update parts of a web page, without reloading the whole page.</li>
+                        <li><strong>What is an API?</strong> - An API (Application Programming Interface) is a set of rules that allows one piece of software to interact with another. In the context of web development, APIs are used to enable interaction between web applications and external servers and services.</li>
+                        <li><strong>How does AJAX work with APIs?</strong> - AJAX can make HTTP requests to APIs to fetch data or send data. This is done using the XMLHttpRequest object or modern fetch API in JavaScript.</li>
+                        <li><strong>Example Walkthrough:</strong> - When the "Load Quote" button is clicked, an AJAX request is made to the JSONPlaceholder API. This request fetches a random quote, which is then displayed on the page without needing to reload the entire page.</li>
+                    </ol>
+                </div>
+            </div>
+
+            <!-- Video Content Section -->
+            <h3>Video Content: What is a Hyperlink? How do Hyperlinks work?</h3>
+            <p>Hyperlinks are words or phrases called "hypertext" that act as shortcuts to other documents or website pages. In this video, you will learn about hyperlinks and how they work.</p>
+
+            <div class="video-wrapper">
+                <iframe src="https://www.youtube.com/embed/P-TOCUWA-5A" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <p class="source">Source: "What is a Hyperlink? How do Hyperlinks work?" YouTube video, 2:05, posted by "How To Assistant," <a href="https://www.youtube.com/watch?v=P-TOCUWA-5A" target="_blank">https://www.youtube.com/watch?v=P-TOCUWA-5A</a>.</p>
+
+
+            <div id="content-quiz-container" class="quiz-container">
+                <h3>Test Your Understanding of Hyperlinks</h3>
+            
+                <!-- The first question -->
+                <div class="question-container">
+                    <p>Which HTML tag is used to create a text hyperlink?</p>
+                    <form id="hyperlink-quiz">
+                        <input type="radio" id="option1" name="hyperlink" value="div">
+                        <label for="option1">&lt;div&gt;</label><br>
+                        <input type="radio" id="option2" name="hyperlink" value="a">
+                        <label for="option2">&lt;a&gt;</label><br>
+                        <input type="radio" id="option3" name="hyperlink" value="span">
+                        <label for="option3">&lt;span&gt;</label><br>
+                        <button type="button" onclick="checkAnswer('hyperlink', 'a', 'quiz-result')">Submit Answer</button>
+                    </form>
+                    <div id="quiz-result"></div>
+                </div>
+            
+                <!-- The second question -->
+                <div class="question-container">
+                    <p>Which statement is true about the use of hyperlinks in web navigation?</p>
+                    <form id="navigation-quiz">
+                        <input type="radio" id="navOption1" name="navigation" value="false1">
+                        <label for="navOption1">Hyperlinks can only link to external websites.</label><br>
+                        <input type="radio" id="navOption2" name="navigation" value="true">
+                        <label for="navOption2">Hyperlinks improve navigation by linking to different parts of the same webpage or other webpages.</label><br>
+                        <input type="radio" id="navOption3" name="navigation" value="false2">
+                        <label for="navOption3">Hyperlinks are primarily used for styling text.</label><br>
+                        <button type="button" onclick="checkAnswer('navigation', 'true', 'navigation-result')">Submit Answer</button>
+                    </form>
+                    <div id="navigation-result"></div>
+                </div>
+            </div>
+
+            <h3>Reference</h3>
+            <ol class="references-list">
+                <li>
+                    Park, H. W., &amp; Thelwall, M. (2003). <em>Hyperlink Analyses of the World Wide Web: A Review</em>. <em>Journal of Computer-Mediated Communication</em>, 8(4), JCMC843. <a href="https://doi.org/10.1111/j.1083-6101.2003.tb00223.x" target="_blank">https://doi.org/10.1111/j.1083-6101.2003.tb00223.x</a>
+                </li>
+                <li>
+                    W3Schools. (2024). <em>HTML Links</em>. Retrieved April 9, 2024, from <a href="https://www.w3schools.com" target="_blank">https://www.w3schools.com</a>
+                </li>
+                <li>
+                    Pérez-Montoro, M., &amp; Codina, L. (2016). <em>Navigation design and SEO for content-intensive websites: A guide for an efficient digital communication</em>. Chandos Publishing.
+                </li>
+                <li>
+                    Typicode. (2024). JSONPlaceholder. Retrieved from <a href="https://jsonplaceholder.typicode.com" target="_blank">https://jsonplaceholder.typicode.com</a>
+                </li>
+            </ol>
+            
+
+        </div>
+
+        
+        <!-- Section for the history of hyperlinks -->
+        <div id="hyperlinks-history" class="section">
+            <h2>History of Hyperlinks</h2>
+
+            <!-- Introduction -->
+            <p>This section explores the critical role of hyperlinks in the development of the internet, highlighting their foundational impact on digital communication and information architecture.</p>
+
+
+            <h3>How the hyperlink changed everything?</h3>
+            <p>Explore the transformative journey of hyperlinks through this engaging video presented by Margaret Gould Stewart in a TED series. This video titled "How the hyperlink changed everything" delves into the origins and the profound impact of hyperlinks on global communication and information architecture. From its humble beginnings to becoming the fundamental building block of the internet, the hyperlink has redefined how knowledge is interconnected and accessed globally.</p>
+            <div class="video-wrapper">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/3Va3oY8pfSI" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <p class="source">Source: "How the hyperlink changed everything?" YouTube video, 3:34, posted by "TED," <a href="https://www.youtube.com/embed/3Va3oY8pfSI" target="_blank">https://www.youtube.com/embed/3Va3oY8pfSI</a>.</p>
+
+
+            <!-- Interactive Timeline Display -->
+            <div class="interactive-timeline-container">
+
+                <h3>Interactive Timeline of Hyperlink Development</h3>
+
+                <nav class="timeline-navigation">
+                    <button class="year-button" onclick="showYearDetails('1945')">1945</button>
+                    <button class="year-button" onclick="showYearDetails('1965')">1965</button>
+                    <button class="year-button" onclick="showYearDetails('1982')">1982</button>
+                    <button class="year-button" onclick="showYearDetails('1987')">1987</button>
+                    <button class="year-button" onclick="showYearDetails('1990')">1990 & 1991</button>
+         
+                </nav>
+        
+                <div id="timeline-content" class="timeline-content">
+                
+                    <div id="event1945" class="event-details" style="display: block;">
+                        <h4>1945: Vannevar Bush Proposes the Memex</h4>
+                        <p><strong>Historical Context:</strong> Vannevar Bush introduces the Memex concept in his influential article "As We May Think<sup>1</sup>." The Memex, a theoretical machine, was proposed as a personal, mechanical librarian that would store and automatically retrieve documents linked by associative trails, similar to how the human mind works.</p>
+                        <p><strong>Technical Details:</strong> Envisioned as a desk with translucent screens and mechanical levers, the Memex would allow users to view and create links between documents stored on microfilm, representing one of the earliest concepts of hypertext.</p>
+                        <p><strong>Social Impact:</strong> Bush's vision catalyzed the imagination of many future technologists and directly inspired pioneers like Ted Nelson and Douglas Engelbart, setting the foundation for the development of personal computing and the internet.</p>                
+                        <figure class="image-container">
+                            <img src="https://preview.redd.it/do-you-think-we-have-already-created-any-memex-like-system-v0-l0p07bhkxj2a1.jpg?auto=webp&s=f36fd089b074b209f065275c92651fda82040747" alt="Vannevar Bush's Memex machine">
+                            <figcaption class="image-caption">
+                                Fig. 3: Vannevar Bush's Memex machine
+                            </figcaption>
+                        </figure>
+                        <p class="source">Source: "Do you think we have already created any Memex-like system?", r/Futurism, Reddit, accessed April 09, 2024, <a href="https://www.reddit.com/r/Futurism/comments/z6bd4a/do_you_think_we_have_already_created_any_memex/">https://www.reddit.com/r/Futurism/comments/z6bd4a/do_you_think_we_have_already_created_any_memex/</a>.</p>
+                        
+                    </div>
+
+                    <div id="event1965" class="event-details" style="display: none;">
+                        <h4>1965: Ted Nelson and the Concept of Hypertext</h4>
+                        <p><strong>Innovation Description:</strong> Ted Nelson coined the term "hypertext" in 1965 to describe a form of text that allows readers to navigate paths across connected texts non-linearly. This idea was central to his conceptualization of Project Xanadu<sup>2</sup>, an ambitious digital library intended to contain all human knowledge. Nelson envisioned a universally accessible, computer-based publication system that supported non-sequential writing and reading, allowing users to follow their interest paths across interconnected literature.</p>
+                        <p><strong>Technical Details:</strong> Project Xanadu aimed to implement a system where every document could be digitally linked to any other document, with no limitations on the number or type of links that could be created. This was a significant departure from the linear and hierarchical structures typical of paper-based media. Xanadu was designed to store information in a file format that supported overlapping hierarchies and allowed for the embedding of both visible and invisible links.</p>
+                        <p><strong>Application Scenarios:</strong> While the full implementation of Xanadu never materialized, its conceptual framework laid the groundwork for later technological developments in digital text and information systems. Elements of Xanadu can be seen in the development of web technologies, particularly HTML and the World Wide Web, which simplified some of Xanadu's original visions to create a more practical web of information.</p>
+                        <p><strong>Cultural and Social Impact:</strong> Nelson's ideas challenged traditional notions of how texts could be structured and interacted with, proposing a radically democratic access to information. He envisioned a world where knowledge was forever unbounded, interconnected, and freely navigable, which inspired future generations of technologists and thinkers. The hypertext concept revolutionized the way information is organized, accessed, and understood, influencing not only the field of computer science but also areas like literary studies and knowledge management.</p>
+                        <p><strong>Legacy and Ongoing Influence:</strong> The principles of open access and interconnectivity in Nelson's hypertext theory continue to influence modern digital platforms, from academic databases to online encyclopedias and interactive learning resources. Despite the partial realization of the Xanadu project, Nelson's visionary ideas remain influential in discussions about digital rights, internet architecture, and the evolving nature of authorship and copyright in the digital age.</p>
+                        <figure class="image-container">
+                            <img src="https://mediainspiratorium.files.wordpress.com/2015/12/a3_1940-1970_3_135.jpg" alt="Ted Nelson 1965">
+                            <figcaption class="image-caption">
+                                Fig. 4: Ted Nelson 1965
+                            </figcaption>
+                        </figure>
+                        <p class="source">Source: "Ted Nelson 1965", mediainspiratorium, accessed April 10, 2024, <a href="https://mediainspiratorium.com/2015/12/04/ted-nelson-1965/">https://mediainspiratorium.com/2015/12/04/ted-nelson-1965/</a>.</p>                                 
+                    </div>
+                    
+                    <div id="event1982" class="event-details" style="display: none;">
+                        <h4>1982: Pioneering Text-Based Hyperlinks</h4>
+                        <p><strong>Technological Breakthrough:</strong> In 1982, researchers at the University of Maryland introduced a revolutionary system called Hyperties, which was one of the first to use text itself as a hyperlink marker. This system significantly impacted the user interface by making text-based navigation both practical and user-friendly.</p>
+
+                        <div class=".definition-container">
+                            <p><strong>Technical Details:</strong> Hyperties was characterized by its use of blue text on a gray background<sup>3</sup> to indicate clickable hyperlinks. This color scheme was chosen for its high contrast and visibility, which helped users easily identify links within the text. This design choice was pioneering at the time and set a visual standard that influenced the default hyperlink colors (blue text) commonly seen in later web browsers.</p>
+                            <figure class="image-container">
+                                <img src="https://cannibals.digital/wp-content/uploads/2022/07/Hyperlinks.jpg" alt="Blue hyperlinks">
+                                <figcaption class="image-caption">
+                                    Fig. 5: Blue hyperlinks
+                                </figcaption>
+                            </figure>
+                            <p class="source">Source: "11 Types of Hyperlinks You Should Know About", Aloukik Rathore, accessed April 10, 2024, <a href="https://cannibals.digital/types-of-hyperlinks/">https://cannibals.digital/types-of-hyperlinks/</a>.</p>
+                        </div>
+                        <p><strong>Application Scenarios:</strong> Deployed initially in a museum setting, Hyperties allowed visitors to explore related media and detailed information by clicking on these hyperlinks. This interactive approach to information presentation transformed how educational content could be delivered, making it more engaging and accessible to audiences.</p>
+                        <p><strong>Cultural and Social Impact:</strong> The introduction of Hyperties marked a significant milestone in digital communication by demonstrating the practical utility of hypertext in public and educational environments. It showcased the potential for digital platforms to enhance user engagement and learning experiences through interactive text.</p>
+                        <p><strong>Legacy and Ongoing Influence:</strong> The visual and functional innovations of Hyperties laid foundational principles for web design, particularly in hyperlink aesthetics and interactivity. Its influence extended beyond educational applications, affecting the development of user interface designs across the burgeoning Internet and influencing how information is structured and accessed online.</p>
+                    </div>
+                    
+                    <div id="event1987" class="event-details" style="display: none;">
+                        <h4>1987: Apple Introduces HyperCard</h4>
+                        <p><strong>Product Launch:</strong> Apple launches HyperCard<sup>1</sup>, a software that allowed users to create and link multimedia cards. HyperCard stacks could include images, texts, and links, creating a rich, interactive experience.</p>
+                        <p><strong>Influence on Industry:</strong> HyperCard democratized multimedia content creation, providing tools for non-programmers and educators to build interactive media applications. It was a precursor to many features now standard in web technologies, such as clickable links and multimedia integration.</p>
+                        
+                        <!-- Video Content -->
+                        <h4>Video Content: Unraveling the Mystery of HyperCard</h4>
+                        <p>This episode of The Computer Chronicles explores HyperCard, a tool that blended system and application software to create an interactive multimedia platform. Watch as Danny Goodman, author of a comprehensive guide on HyperCard, and Bill Atkinson, the developer of HyperCard, discuss its functionality and impact.</p>
+
+                        <div class="video-wrapper">
+                            <iframe src="https://www.youtube.com/embed/FquNpWdf9vg" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <p class="source">Source: "The Computer Chronicles - Hypercard (1987)" YouTube video, 26:50, posted by "The Computer Chronicles," <a href="https://www.youtube.com/watch?v=FquNpWdf9vg" target="_blank">https://www.youtube.com/watch?v=FquNpWdf9vg</a>.</p>
+
+                    </div>
+                    
+                    <div id="event1990" class="event-details" style="display: none;">
+                        <h4>1990 & 1991: Launch of the First Website and The World Wide Web Becomes Global</h4>
+                        <p><strong>1990 - Launch of the First Website:</strong> Developed by Tim Berners-Lee, the first website hosted by CERN went live<sup>4</sup>, serving as a portal to the World Wide Web project, which provided information on the web itself, user instructions, and software development tools. This site was aimed initially at the high energy physics community at CERN but quickly set the stage for broader use.</p>
+                        <p><strong>Technical Innovation:</strong> Hosted on a Next computer, this first site utilized HTML and HTTP, foundational technologies that underpin today's web. The website's launch demonstrated the web's potential to support a new form of multimedia-rich, interconnected communication.</p>
+                        <p><strong>1991 - Global Expansion:</strong> The World Wide Web was officially unveiled by Berners-Lee and his team, transforming it into the first global hypertext system. This innovation broke down geographical barriers to information access, democratizing data sharing across education, business, and communication.</p>
+                        <p><strong>Wider Implications:</strong> The web's introduction was a pivotal moment that catalyzed the rapid expansion of the internet into all areas of modern life, influencing everything from e-commerce and digital media to education and government. Its design, based on openness and universality, facilitated widespread adoption and innovation.</p>
+                        <p><strong>Legacy:</strong> Today, the web is a fundamental part of daily life, encapsulating a vast array of human knowledge and culture. Its inception is commemorated as a key technological milestone, reflecting the profound impact of Berners-Lee's work on global communication and commerce.</p>
+
+                        <h4>Video Content: Tim Berners-Lee: The Man Behind the World Wide Web</h4>
+
+                        <div class="video-wrapper">
+                            <iframe src="https://www.youtube.com/embed/K4GyaPzTVmk" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <p class="source">Source: "Tim Berners-Lee: The Man Behind the World Wide Web" YouTube video, 3:05, posted by "Perceptive," <a href="https://www.youtube.com/watch?v=K4GyaPzTVmk" target="_blank">https://www.youtube.com/watch?v=K4GyaPzTVmk</a>.</p>
+
+                    </div>
+                    
+                    <!-- Click the arrow to switch to the next year -->                   
+                    <img src="https://covid19.nih.gov/assets/animated-arrow.gif" alt="Next" onclick="nextYear()" class="next-arrow">
+
+                </div>
+            </div>
+
+
+            <div id="history-quiz-container" class="quiz-container">
+                <h3>Test Your Knowledge on the History of Hyperlinks</h3>
+            
+                <!-- The first question -->
+                <div class="question-container">
+                    <p>Who first proposed the concept that evolved into modern hyperlinks?</p>
+                    <form>
+                        <input type="radio" id="bush" name="history" value="bush">
+                        <label for="bush">Vannevar Bush</label><br>
+                        <input type="radio" id="nelson" name="history" value="nelson">
+                        <label for="nelson">Ted Nelson</label><br>
+                        <input type="radio" id="berners-lee" name="history" value="berners-lee">
+                        <label for="berners-lee">Tim Berners-Lee</label><br>
+                        <button type="button" onclick="checkAnswer('history', 'bush', 'history-result1')">Submit Answer</button>
+                    </form>
+                    <div id="history-result1"></div>
+                </div>
+            
+                <!-- The Second question -->
+                <div class="question-container">
+                    <p>What was the name of the early hypertext system that demonstrated linking different pieces of content?</p>
+                    <form>
+                        <input type="radio" id="xanadu" name="history-system" value="xanadu">
+                        <label for="xanadu">Xanadu</label><br>
+                        <input type="radio" id="hyperties" name="history-system" value="hyperties">
+                        <label for="hyperties">Hyperties</label><br>
+                        <input type="radio" id="hypercard" name="history-system" value="hypercard">
+                        <label for="hypercard">HyperCard</label><br>
+                        <button type="button" onclick="checkAnswer('history-system', 'xanadu', 'history-result2')">Submit Answer</button>
+                    </form>
+                    <div id="history-result2"></div>
+                </div>
+            </div>
+
+            <h3>Reference</h3>
+            <ol class="references-list">
+                <li>
+                    Nielsen, J. (1995). <em>Multimedia and hypertext: The internet and beyond</em>. Morgan Kaufmann Publishers. Retrieved from <a href="https://www.nngroup.com/books/multimedia-and-hypertext/" target="_blank">Nielsen Norman Group</a>
+                </li>                
+                <li>
+                    Lowood, H. (2015). <em>Ted Nelson: A Critical (and Critically Incomplete) Bibliography</em>. In <em>Intertwingled: The Work and Influence of Ted Nelson</em>, pp. 123-130.
+                </li>              
+                <li>
+                    TED. (2018, November 4). <em>How the hyperlink changed everything?</em> [Video]. YouTube. Retrieved April 12, 2024, from <a href="https://www.youtube.com/watch?v=3Va3oY8pfSI" target="_blank">https://www.youtube.com/watch?v=3Va3oY8pfSI</a>
+                </li>               
+                <li>
+                    McPherson, S. S. (2009). <em>Tim Berners-Lee: Inventor of the World Wide Web</em>. Twenty-First Century Books.
+                </li>                
+            </ol>
+        </div>
+
+
+        <!-- Section for the biography -->
+        <div id="biography" class="section">
+            <h2>Biography</h2>
+            
+            <div class="bio-introduction">
+               
+                <!-- Profile picture -->
+                <img src="ShijunSHAO.jpg" alt="ShijunSHAO" class="profile-pic">
+                
+                <!-- Personal details -->
+                <div class="bio-details">
+                <p><strong>Name:</strong> Shijun Shao</p>
+                <p><strong>Student Number:</strong> 23926903</p>
+                <p><strong>E-mail:</strong> <a href="mailto:23926903@student.uwa.edu.au">23926903@student.uwa.edu.au</a></p>
+                <p><strong>Address:</strong> South Perth, Western Australia</p>
+                <p><strong>GitHub:</strong> <a href="https://github.com/Halffancyy" target="_blank">https://github.com/Halffancyy</a></p>
+                <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/shijun-shao-b944b825a/" target="_blank">https://www.linkedin.com/in/shijun-shao-b944b825a/</a></p>
+                            
+                <p>Hi, I'm Shijun Shao. An enthusiastic explorer of technology and nature, I blend a passion for software development with a zest for life's adventures. As a Master's student in Information Technology at the University of Western Australia, I am dedicated to leveraging technology to enhance efficiency and innovation across diverse sectors.</p>
+                                
+            </div>
+
+            <div class="bio-details">
+                <h3>Education</h3>
+                <div class="education-timeline">
+                    <div class="education-timeline-item">
+                        <div class="education-timeline-marker"></div>
+                        <div class="education-timeline-content">
+                            <h4>2023 - Present</h4>
+                            <p><strong>Master of Information Technology</strong> - University of Western Australia, Perth</p>
+                            <ul>
+                                <li>WAM: 72.625 / 100</li>
+                                <li>Recipient of the UWA Global Excellence Scholarship (2023, 2024)</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="education-timeline-item">
+                        <div class="education-timeline-marker"></div>
+                        <div class="education-timeline-content">
+                            <h4>2018 - 2022</h4>
+                            <p><strong>Bachelor of Economics</strong> - Zhejiang University of Science and Technology, China</p>
+                            <ul>
+                                <li>WAM: 89.4 / 100</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>                        
+
+            <div class="skills-container">
+                <h3>Skills</h3>
+                <ul>
+                    <li><strong>Front-End Development:</strong> HTML5, CSS3, JavaScript (ES6/ES7/ES8)</li>
+                    <li><strong>Back-End Development:</strong> Python, Java, SQLite, Linux, Shell Scripting, R Language</li>
+                    <li><strong>Tools & Methodologies:</strong> GitHub, Docker, Microsoft Office Suite</li>
+                </ul>
+            </div>
+            
+            <div id="experience-section">
+                <h3>Experience</h3>
+                <div class="experience-item">
+                    <h4>Perth Girls Programming Network (GPN)</h4>
+                    <h5>Teaching Assistant - Perth (Aug 2023 - Present)</h5>
+                    <p>Taught Python programming to young girls, fostering their coding skills and enthusiasm for technology.</p>
+                </div>
+
+                <div class="experience-item">
+                    <h4>The University of Western Australia (UWA)</h4>
+                    <h5>International Student Engagement Ambassador - Perth (Jul 2023 - Present)</h5>
+                    <p>Provided guidance and support to international students, showcasing ability to educate and assist diverse groups.</p>
+
+                    <!-- Click to switch photo function -->
+                    <div class="ambassador-image-container">
+                        <img id="mainImage" src="Ambassadors.jpg" alt="Ambassadors" class="main-image">
+                        <img src="https://pronto-core-cdn.prontomarketing.com/2/wp-content/uploads/sites/225/cache/2024/03/image-magnifying-glass-laptop-e1596228621462/2284403618.png" alt="Magnifying Glass" class="magnifier" onclick="swapImage()">
+                        <p>Click the magnifying glass</p>
+                        <p>to see a larger image of Ambassador Shijun Shao.</p>
+                    </div>
+                </div>
+                
+                <div class="experience-item">
+                    <h4>The University of Western Australia (UWA)</h4>
+                    <h5>Alumni Student Ambassador - Perth (Jul 2023)</h5>
+                    <p>Engaged with students and families, demonstrating strong communication and interpersonal skills.</p>
+                </div>
+                <div class="experience-item">
+                    <h4>The University of Western Australia (UWA)</h4>
+                    <h5>O-Week Volunteer - Perth (Jul 2023)</h5>
+                    <p>Assisted in organizing and facilitating orientation events for new students.</p>
+                </div>
+                <div class="experience-item">
+                    <h4>HBF Run for a Reason</h4>
+                    <h5>Volunteer - Perth (May 2023)</h5>
+                    <p>Supported a community event focused on raising awareness and funds for a charitable cause.</p>
+                </div>
+                <div class="experience-item">
+                    <h4>Shenwan Hongyuan Group Co. Ltd.</h4>
+                    <h5>Intern - China (Jan 2022 - May 2022)</h5>
+                    <p>Analyzed financial data, utilizing technology tools for market trend analysis and reporting.</p>
+                </div>
+                <div class="experience-item">
+                    <h4>Zhejiang University of Science and Technology</h4>
+                    <h5>Deputy Chief Executive Officer, Foreign Language Association - China (Sep 2018 - Dec 2019)</h5>
+                    <p>Led a team in coordinating activities and managing event logistics, enhancing foreign teacher interactions and cultural exchange programs.</p>
+                </div>
+            </div>
+            
+            <!-- Drag and drop game -->
+            <div id="hobbies" class="hobbies-container">
+                <h3>Can You Guess My Hobbies?</h3>
+                <p>Drag the correct description to match each hobby.</p>
+                <p>Let's see if you can guess right!</p>
+                <div class="hobby" id="coding" draggable="false">Coding</div>
+                <div class="hobby" id="gaming" draggable="false">Playing Games</div>
+                <div class="hobby" id="photography" draggable="false">Photography</div>
+            </div>
+            
+            <div id="descriptions" class="descriptions-container">
+                <div class="description" draggable="true" id="createSoftware">Create Software</div>
+                <div class="description" draggable="true" id="plantsVsZombies">Plants vs. Zombies</div>
+                <div class="description" draggable="true" id="takePhotos">Take Photos</div>
+            </div>
+            
+            <!-- Message for correct or incorrect answers -->
+            <div id="message"></div>
+            
+            <!-- Reference to chatGPT -->
+            <p class="acknowledgment">
+                Thanks to ChatGPT, I've learned various CSS styles and JavaScript practices, received detailed explanations on topics I was unfamiliar with, learned how to create a timeline, improved my debugging skills, and received valuable guidance.
+            </p>
+
+        </div>
+    </div>
+    </div>
+    </div>
+
+    <!-- Load jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Ensure that the top navigation bar can be used after shrinking the page -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Load script-->
+    <script src="script.js"></script>
+</body>
+</html>
